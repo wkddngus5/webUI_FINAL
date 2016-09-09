@@ -1,9 +1,6 @@
 
 
 jQuery(document).ready(function(){
-    
-    alert("hello3");
-    
 
     $(".spread>a").click(function(){
         var submenu = $(this).next("ul");
