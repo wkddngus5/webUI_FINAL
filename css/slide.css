@@ -1,0 +1,54 @@
+#HOT&NEW{
+    padding: 234px;
+    background-color:#EEE;
+    right: 50%;
+}
+
+.slide{
+    height: 280px;
+    width:1040px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 30px;   
+}
+
+.slide h3{
+    font-size:22px;
+    font-family: m;
+    
+}
+
+.slide ul{
+    margin-left: 45px;
+    width=2112px;
+    list-style: none;
+    font-size: 30px;
+}
+
+#page1{
+    display: inline-block;
+}
+
+#page2{
+    display: inline-block;
+}
+
+.slide ul li{
+    display: inline-block;
+}
+
+.slide button.prev{
+    position: absolute;
+    left:0;
+    top:145px; 
+}
+
+.slide button.next{
+    position: absolute;
+    right: 0;
+    top:145px;
+    
+}
+
+

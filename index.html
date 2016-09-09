@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
+    <title>webUI_FINAL</title>
+    <link rel = "stylesheet" href="css/main.css"/>
+    <link rel = "stylesheet" href="css/leftNav.css"/>
+    <link rel = "stylesheet" href="css/slide.css"/>
+    <script src="jquery-3.1.0.min.js"></script>
+
+    <script src="js/application.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="NAVER">NAVER</h1>
+            <h1 id="MUSIC">MUSIC</h1>
+            <input>
+            <button class="search">검색</button>
+            <button class="totalSearch">통합검색</button>
+            <br>
+            <nav id="headerMenu">
+                <ul>
+                    <li><a href="#"><button class="headerNav">뮤직 홈</button></a></li>
+                    <li><a href="#"><button class="headerNav">마이 뮤직</button></a></li>
+                    <li><a href="#"><button class="headerNav">오늘의 뮤직</button></a></li>
+                    <li><a href="#"><button class="headerNav">뮤지션 리그</button></a></li>
+                    <li><a href="#"><button class="headerNav">온스테이지</button></a></li>
+                    <li><a href="#"><button class="headerNav">이용권 구매</button></a></li>
+                    <li><a href="#"><button class="headerNav">HD음원</button></a></li>
+                    <li><a href="#"><button class="headerNav">라디오</button></a></li>
+                    <li><a href="#"><button class="headerNav">네이버앱 뮤직판 오픈!</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <nav id="leftMenu">
+            <ul>
+                <li class="noneDot"><a href="#"><button id="musicPlayer">뮤직플레이어</button></a></li>
+                <hr>
+                <li id="listenMusic">
+                    <ul>    
+                        <li class="noneDot"><p>음악감상</p></li>
+                        
+                        <li class="spread"><a href="#"><p>TOP100</p></a>
+                            <ul class="spreadList">
+                                <li><a href="#">종합</a></li>
+                                <li><a href="#">국내</a></li>
+                                <li><a href="#">해외</a></li>
+                                <li><a href="#">뮤지션리그</a></li>
+                                <li><a href="#">차트 히스토리</a></li>
+                            </ul>
+                        </li>
+                        <li class="spread"><a href="#"><p>최신앨범</p></a>
+                             <ul class="spreadList">
+                                <li><a href="#">국내</a></li>
+                                <li><a href="#">해외</a></li>
+                            </ul>
+                        </li>
+                        <li class="spread"><a href="#"><p>최신곡</p></a>
+                            <ul class="spreadList">
+                                <li><a href="#">국내</a></li>
+                                <li><a href="#">해외</a></li>
+                            </ul>
+                        </li>
+                        <li class="spread"><a href="#"><p>국내음악</p></a>
+                            <ul class="spreadList">
+                                <li><a href="#">발라드</a></li>
+                                <li><a href="#">댄스</a></li>
+                                <li><a href="#">힙합</a></li>
+                                <li><a href="#">록/포크</a></li>
+                                <li><a href="#">트로트</a></li>
+                            </ul>
+                        </li>
+                        <li class="spread"><a href="#"><p>해외음악</p></a>
+                            <ul class="spreadList">
+                                <li><a href="#">POP</a></li>
+                                <li><a href="#">ROCK/FOLK</a></li>
+                                <li><a href="#">HIP-HOP</a></li>
+                                <li><a href="#">R&B</a></li>
+                                <li><a href="#">ELECTRONICA</a></li>
+                                <li><a href="#">J-POP</a></li>
+                                <li><a href="#">WORLD MUSIC</a></li>
+                            </ul>
+                        </li>
+                        <li class="spread"><a href="#"><p>기타장르</p></a>
+                            <ul class="spreadList">
+                                <li><a href="#">재즈/뉴에이지</a></li>
+                                <li><a href="#">클래식</a></li>
+                                <li><a href="#">OST</a></li>
+                                <li><a href="#">CCM</a></li>
+                                <li><a href="#">그 외</a></li>
+                            </ul>
+                        </li>
+                        <li class="spread"><a href="#"><p>뮤직비디오</p></a>
+                            <ul class="spreadList">
+                                <li><a href="#">국내</a></li>
+                                <li><a href="#">해외</a></li>
+                            </ul>
+                        </li>
+                        <li class="spread"><a href="#"><p>추천음악</p></a>
+                            <ul class="spreadList">
+                                <li><a href="#">테마채널</a></li>
+                                <li><a href="#">명예의 전당</a></li>
+                                <li><a href="#">블로그 DJ</a></li>
+                                <li><a href="#">Musician's Choice</a></li>
+                                <li><a href="#">지구촌 팝뉴스</a></li>
+                                <li><a href="#">이주의 발견-국내</a></li>
+                                <li><a href="#">이주의 발견-해외</a></li>
+                                <li><a href="#">시대별 음악</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id=myMusic>
+                    <ul>
+                        <li class="noneDot"><p>마이뮤직</p></li>
+                        <li><a href="#"><p>MY좋아요</p></a></li>
+                        <li><a href="#"><p>최근 들은 음악</p></a></li>
+                        <li><a href="#"><p>MY TOP 30</p></a></li>
+                        <li><a href="#"><p>구매한 음원</p></a></li>
+                        <li><a href="#"><p>내 리스트</p><p>+추가</p></a></li>
+                    </ul>
+                </li>
+                <li class="noneDot"><p>내 이용권</p><a href="#"><p>관리</p></a></li>
+                <li class="noneDot"><p>로그인하시면 내 이용권을 이용하실 수 있습니다.</p></li>
+                <li class="noneDot"><p>이용권 구매하러 가기</p></li>
+                <li class="noneDot"><p>내 정기결제 현황</p><a href="#">현황</a></li>
+                <li class="noneDot"><p>정기결제 미이용 중</p></li>
+                <li class="noneDot"><a href="#"><p>신규회원 혜택 받기!</p></a></li>
+                <li class="noneDot"><p>내 등록기기</p><a href="#">현황</a></li>
+                <li class="noneDot"><p>선물함</p><a href="#">현황</a></li>
+                <li class="noneDot"><p>네이버페이</p><a href="#">현황</a></li>
+                <li class="noneDot"><button>공지사항</button><button>뮤직FAQ</button></li>
+            </ul>
+        </nav>
+        <div class="mainContents">
+            <h2>오늘의 뮤직</h2>
+            <hr>
+            <table>
+                <tr>
+                    <td><a href="#">오늘의 뮤직 홈</a></td>
+                    <td><a href="#">스페셜</a></td>
+                    <td><a href="#">매거진</a></td>
+                    <td><a href="#">이벤트</a></td>
+                </tr>
+            </table>
+            <hr>
+            
+            <div class= "slide">
+                <h3 id="HOT&NEW">HOT & NEW</h3>
+                <button class="prev" type="button"><img src="img/leftButton.PNG"></button>
+                <ul>
+                    <div id="page1">
+                    <li><img src="img/todayMusic1_1.PNG"></li>
+                    <li><img src="img/todayMusic1_2.PNG"></li>
+                    <li><img src="img/todayMusic1_3.PNG"></li>
+                    <li><img src="img/todayMusic1_4.PNG"></li>
+                    </div>
+                    <div id="page2"> 
+                    <li><img src="img/todayMusic2_1.PNG"></li>
+                    <li><img src="img/todayMusic2_2.PNG"></li>
+                    <li><img src="img/todayMusic2_3.PNG"></li>
+                    <li><img src="img/todayMusic2_4.PNG"></li>
+                    </div>
+                </ul>
+                <button class="next" type="button"><img src="img/rightButton.PNG"></button>
+            </div>
+            <br><br><hr><br><br>
+
+            <div class="contents" id="스페셜">
+                <a href="#"><p id="seeMore">스페셜 더보기</p></a>
+                <h3>스페셜</h3>
+                <div class="contentsList" id=special1>
+                    <a href="#"><img src="img/special1.PNG" align="left"></a>
+                    <h5>뮤지션리그 스페셜</h5>
+                    <br>
+                    <h4>홀로서기의 완성, 타린</h4>
+                    <br>
+                    <p>기타를 치며, 일상의 감성을 노래하는 타린을 만났습니다. 언제, 어디서 들어도 좋은 노래를 부르고 싶다는 그녀는 언제, 어디서 만나도 기분 좋을 만한 웃음을 가지고 있었습니다. 그런 모습, 그런 마음으로 부르는 노래, 타린이 9월 뮤지션리그 인터뷰의 주인공입니다.</p>
+                </div>
+                <br><br><br>
+
+                <div class="contentsList" id=special2>
+                    <a href="#"><img src="img/special2.PNG" align="left"></a>
+                    <h5>스페셜</h5>
+                    <br>
+                    <h4>뮤지션리그x상상마당 춘천 [Imagine Your Music]</h4>
+                    <br>
+                    <p>뮤지션리그와 KT&G 상상마당 춘천이 함께 새로운 뮤지션 지원 프로젝트를 시작합니다. 최고의 시설과 환경을 갖춘 상상마당과 함께하는 뮤지션리거 제작 지원 프로젝트, Imagine Your Music! 이 프로젝트로 더욱 멋져질 당신의 음악을 상상해봅니다. 뮤지션리거라면 지금 확인하세요!</p>
+                </div>
+                <br><br><br>
+            </div>
+            <br><br><hr><br><br>
+
+            <div class="contents" id="매거진">
+                <a href="#"><p id="seeMore">매거진 더보기</p></a>
+                <h3>매거진</h3>
+                <div class="contentsList" id=megazine1>
+                    <a href="#"><img src="img/megazine1.PNG" align="left"></a>
+                    <h5>이주의 발견-해외</h5>
+                    <br>
+                    <h4>'Raye'외 5매</h4>
+                    <br>
+                    <p>이번 주, 놓치면 아쉬울 음악들을 이주의 발견 - 해외에서 만나봅니다.</p>
+                </div>
+                <br><br><br>
+
+                <div class="contentsList" id=megazine2>
+                    <a href="#"><img src="img/megazine2.PNG" align="left"></a>
+                    <h5>이주의 발견-국내</h5>
+                    <br>
+                    <h4>'크러쉬X한상원'외 5매</h4>
+                    <br>
+                    <p>이번 주 국내 앨범 추천 플레이리스트를 소개합니다.</p>
+                </div>
+                <br><br><br>
+            </div>
+            <br><br><hr><br><br>
+
+            <div class="contents" id="이벤트">        
+                <a href="#"><p id="seeMore">이벤트 더보기</p></a>
+                <h3>이벤트</h3>
+                <div class="contentsList" id=event1>
+                    <a href="#"><img src="img/event1.PNG" align="left"></a>
+                    <h4>온스테이지 '실리카겔'편 감상편 이벤트!!</h4>
+                    <br>
+                    <h5>2016.9.1~2016.9.7</h5>
+                    <br>
+                    <p>도전과 변화를 두려워하지 않는 밴드 '실리카겔'의 온스테이지 영상을 감상하세요.
+                    <br>
+                    경품: 실리카겔 사인CD (3명)</p>
+                </div>
+                <br><br><br>
+
+                <div class="contentsList" id=event2>
+                    <a href="#"><img src="img/event2.PNG" align="left"></a>
+                    <h4>[익스트림 내한공연] 서울 공연 초대 이벤트!!</h4>
+                    <br>
+                    <h5>2016.8.24~2016.9.7</h5>
+                    <br>
+                    <p>대체 불가한 하드록 밴드인 익스트림의 내한공연에 초대합니다.
+                    <br>
+                    경품: 서울 공연 초대 (5명)</p>
+                <br><br><br>
+                </div>
+            </div>
+        </div>
+        <br><br><hr><br><br>
+        
+    </body>
+
+
+</html>
